@@ -14,7 +14,7 @@ $(document).ready(function(e){
 });
 
 function toggle_onclick($win, $navbar, width){
-    if($win.width() <= 768){
+    if($win.width()<=768){
         $navbar.css({left:`-${width}px`});
     }else{
         $navbar.css({left:'0px'});
