@@ -10,8 +10,13 @@ $(document).ready(function(e){
         toggle_onclick($win, $navbar, width);
     });
 
+    $toggle.click(function(e){
+    $navbar.toggleClass("toggle-left");
+})
 
 });
+
+
 
 function toggle_onclick($win, $navbar, width){
     if($win.width()<=768){
