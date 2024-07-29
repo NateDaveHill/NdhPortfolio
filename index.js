@@ -15,12 +15,33 @@ $(document).ready(function(e){
 })
 
 var typed = new Typed('#typed', {
-                strings: ["Software Developer.", "Photographer."],
+                strings: [
+                    "Software Developer.", 
+                    "Photographer."],
                 typeSpeed: 50,
                 backSpeed: 50,
                 loop: true
             });
+
+var typed_2 = new Typed('#typed_2', {
+                strings: [
+                    "Humilty.",
+                    "Honesty.",
+                    "Integrity.", 
+                    "Transparency.",
+                    "Proactivity.",
+                    "Discipline.",
+                    "Growth.",],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true
+            });
+
+            
         });
+
+
+
 
 
 
