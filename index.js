@@ -14,7 +14,15 @@ $(document).ready(function(e){
     $navbar.toggleClass("toggle-left");
 })
 
-});
+var typed = new Typed('#typed', {
+                strings: ["Software Developer.", "Photographer."],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true
+            });
+        });
+
+
 
 
 
