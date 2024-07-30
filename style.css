@@ -132,6 +132,13 @@ body{
     position: relative;
 }
 
+#footer .social-icon{
+    text-decoration: none;
+}
+#footer .social-icon:hover{
+    color: var(--color-black) !important;
+}
+
 @media screen and (min-width: 768px){
     .toggle-button{
         display: none;
