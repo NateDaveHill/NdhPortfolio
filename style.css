@@ -123,6 +123,7 @@ body{
 }
 
 #footer form .row .col input[type="text"],
+#footer form input[type="text"],
 #footer form .row .col input[type="email"],
 #footer form textarea{
     border: none;

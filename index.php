@@ -1,19 +1,37 @@
+<?php require("script.php"); ?>
+
+<?php
+
+$response = '';
+
+if (isset($_POST['submit'])) {
+    if (empty($_POST['email']) || empty($_POST['subject']) || empty($_POST['message'])) {
+        $response = "All fields are required.";
+    } else {
+        $response = sendMail($_POST['email'], $_POST['subject'], $_POST['message']);
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NDH</title>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
     <!-- header area -->
-     <header id="header">
-        <div class="row m-0"> 
+    <header id="header">
+        <div class="row m-0">
             <div class="col-3 bgcolor-black">
                 <nav class="primary-nav navbar-expand-md">
                     <div class="site-title text-center text-light py-5">
@@ -31,13 +49,13 @@
             </div>
         </div>
         <button class="toggle-button"><span class="fas fa-bars fa-2x"></span></button>
-        
-     </header>
+
+    </header>
     <!-- #header area -->
-     
+
     <main id="site-main">
         <div class="row m-0">
-            <div class="col-md-9 offset-md-3 px-0"> 
+            <div class="col-md-9 offset-md-3 px-0">
 
                 <!-- site-banner-area -->
                 <section class="site-banner" id="home">
@@ -52,7 +70,7 @@
                 <!-- #site-banner-area -->
 
                 <!-- about-me-area -->
-                 <section class="about px-4 my-5" id="about_me">
+                <section class="about px-4 my-5" id="about_me">
                     <div class="me py-5">
                         <h5 class="text-uppercase font-os font-size-16 text-muted">information</h5>
                         <h1 class="text-uppercase font-staat font-size-34">about me</h1>
@@ -66,13 +84,13 @@
                             <h6 class="text-uppercase font-os font-size-16 text-muted">about me</h6>
                             <h5 class="font-ram font-size-20 py-2">My name is Nathan David Hill & I value <span id="typed_2"></span></h5>
                             <p class="front-ram text-black-50 py-2">
-                                I am an enthusiastic and professional person who enjoys being part of a successful and productive team. 
-                                I can communicate effectively with people from diverse cultural backgrounds, at all levels within an organisation. 
-                                In short, I'm reliable, hardworking and keen to learn and develop my skills in a practical environment. 
-                                Coding has grown from an “interest” into a deep passion. 
-                                I have found this journey to be an entire shift in my mindset, perspective and approach to different areas of life. 
-                                Within a short time, I have grown exponentially and with each day 
-                                I am grateful and filled with excitement to embrace new challenges and find a solution to the problems 
+                                I am an enthusiastic and professional person who enjoys being part of a successful and productive team.
+                                I can communicate effectively with people from diverse cultural backgrounds, at all levels within an organisation.
+                                In short, I'm reliable, hardworking and keen to learn and develop my skills in a practical environment.
+                                Coding has grown from an “interest” into a deep passion.
+                                I have found this journey to be an entire shift in my mindset, perspective and approach to different areas of life.
+                                Within a short time, I have grown exponentially and with each day
+                                I am grateful and filled with excitement to embrace new challenges and find a solution to the problems
                                 I face. I am hungry to continue to grow as a person and a software developer.
                             </p>
                             <div class="d-flex flex-row flex-wrap justify-content-between py-4">
@@ -91,29 +109,29 @@
                             <button style="position: relative;" class="btn btn-dark text-uppercase m-3" onclick="location.href='#footer';">hire me</button>
                         </div>
                     </div>
-                 </section>
+                </section>
                 <!-- #about-me-area -->
 
                 <!-- ability -->
-                 <section class="skill px-4 py-5 bg-light">
+                <section class="skill px-4 py-5 bg-light">
                     <div class="ability py-3">
-                         <h5 class="text-uppercase font-os font-size-16 text-muted">abilities</h5>
+                        <h5 class="text-uppercase font-os font-size-16 text-muted">abilities</h5>
                         <h1 class="text-uppercase font-staat font-size-34">my skills</h1>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 p-4">
                             <p class="font-ram font-size-16 text-black-50">
-                                The process of learning software development has significantly 
-                                increased my capacity and skills in clear communication and problem-solving. 
-                                My background in photography has cultivated a meticulous attention to detail 
-                                and a creative approach to challenges.  
+                                The process of learning software development has significantly
+                                increased my capacity and skills in clear communication and problem-solving.
+                                My background in photography has cultivated a meticulous attention to detail
+                                and a creative approach to challenges.
                             </p>
                             <p class="font-ram font-size-16 text-black-50">
-                                Through various roles, I have honed my ability to learn quickly and adapt, seamlessly transferring 
-                                skills from past experiences into new contexts.This adaptability allows me to 
-                                implement actionable steps efficiently and effectively. My dedication to 
-                                continuous learning and my ability to integrate diverse skills into my work 
-                                enable me to deliver innovative and impactful solutions. 
+                                Through various roles, I have honed my ability to learn quickly and adapt, seamlessly transferring
+                                skills from past experiences into new contexts.This adaptability allows me to
+                                implement actionable steps efficiently and effectively. My dedication to
+                                continuous learning and my ability to integrate diverse skills into my work
+                                enable me to deliver innovative and impactful solutions.
                             </p>
                         </div>
                         <div class="col-sm-6 bars">
@@ -155,11 +173,11 @@
                             </div>
                         </div>
                     </div>
-                 </section>
-                 <!-- #ability -->
+                </section>
+                <!-- #ability -->
 
-                 <!-- service -->
-                  <section class="services-are px-4 py-5" id="services">
+                <!-- service -->
+                <section class="services-are px-4 py-5" id="services">
                     <div class="do py-5">
                         <h5 class="text-uppercase font-os font-size-16 text-muted">what i do</h5>
                         <h1 class="text-uppercase font-staat font-size-34">services</h1>
@@ -170,7 +188,7 @@
                                 <span class="icon text-secondary"><i class="fas fa-laptop fa-3x"></i></span>
                                 <h4 class="font-ram py-4">Web Design</h4>
                                 <p class="font-ram font-size-16 text-black-50">
-                                    HTML | CSS | JS | Bootstrap |  C# Blazor
+                                    HTML | CSS | JS | Bootstrap | C# Blazor
                                 </p>
                             </div>
                         </div>
@@ -179,11 +197,11 @@
                                 <span class="icon text-secondary"><i class="fas fa-lightbulb fa-3x"></i></span>
                                 <h4 class="font-ram py-4">Desktop Application</h4>
                                 <p class="font-ram font-size-16 text-black-50">
-                                    C# Windows Forms | C# WPF | Python Tkinter 
+                                    C# Windows Forms | C# WPF | Python Tkinter
                                 </p>
                             </div>
                         </div>
-                         <div class="col-md-4 col-sm-6 mb-4 text-center">
+                        <div class="col-md-4 col-sm-6 mb-4 text-center">
                             <div class="panel border p-4">
                                 <span class="icon text-secondary"><i class="fas fa-camera fa-3x"></i></span>
                                 <h4 class="font-ram py-4">Photography</h4>
@@ -193,11 +211,11 @@
                             </div>
                         </div>
                     </div>
-                  </section>
-                 <!-- #service -->
+                </section>
+                <!-- #service -->
 
-                 <!-- reference -->
-                  <section class="reference bg-light py-5 px-4">
+                <!-- reference -->
+                <section class="reference bg-light py-5 px-4">
                     <div class="refer py-3">
                         <h5 class="text-uppercase font-os font-size-16 text-muted">companies i worked at</h5>
                         <h1 class="text-uppercase font-staat font-size-34">references</h1>
@@ -213,11 +231,11 @@
                             <img src="./assets/relay.png" alt="refer3" class="img-fluid">
                         </div>
                     </div>
-                  </section>
-                 <!-- #reference -->
+                </section>
+                <!-- #reference -->
 
-                 <!-- work -->
-                  <section class="work py-5 px-4" id="portfolio">
+                <!-- work -->
+                <section class="work py-5 px-4" id="portfolio">
                     <div class="py-3">
                         <h5 class="text-uppercase font-os font-size-16 text-muted">portfolio</h5>
                         <h1 class="text-uppercase font-staat font-size-34">recent</h1>
@@ -228,15 +246,15 @@
                                 <img src="./assets/toDoApp.png" alt="toDoApp" class="img-fluid">
                             </a>
                         </div>
-                         <div class="col-sm-4 pb-4" style="position: relative;">
+                        <div class="col-sm-4 pb-4" style="position: relative;">
                             <a href="https://github.com/NateDaveHill/ReceipePage" target="_blank">
                                 <img src="./assets/receipePage.png" alt="receipePage" class="img-fluid">
                             </a>
                         </div>
-                       <div class="col-sm-4 pb-4" style="position: relative;">
-                        <a href="https://github.com/NateDaveHill/LastChance/tree/master/LastChance" target="_blank">
-                            <img src="./assets/newToDo.png" alt="newTodo" class="img-fluid">
-                        </a>
+                        <div class="col-sm-4 pb-4" style="position: relative;">
+                            <a href="https://github.com/NateDaveHill/LastChance/tree/master/LastChance" target="_blank">
+                                <img src="./assets/newToDo.png" alt="newTodo" class="img-fluid">
+                            </a>
                         </div>
                         <div class="col-sm-4 pb-4" style="position: relative;">
                             <a href="https://github.com/NateDaveHill/TheGameOfLife.py" target="_blank">
@@ -253,8 +271,8 @@
                                 <img src="./assets/tankenApp.png" alt="tankenApp" class="img-fluid">
                             </a>
                         </div>
-                        
-                         <div class="col-sm-4 pb-4" style="position: relative;">
+
+                        <div class="col-sm-4 pb-4" style="position: relative;">
                             <a href="https://github.com/NateDaveHill/BlogPreviewCard" target="_blank">
                                 <img src="./assets/blog.png" alt="blog" class="img-fluid">
                             </a>
@@ -264,13 +282,13 @@
                                 <img src="./assets/qrCode.png" alt="qrCode" class="img-fluid">
                             </a>
                         </div>
-                       
-                    </div>
-                  </section>
-                 <!-- #work -->
 
-                 <!-- footer -->
-                  <footer id="footer" class="pt-5 px-3">
+                    </div>
+                </section>
+                <!-- #work -->
+
+                <!-- footer -->
+                <footer id="footer" class="pt-5 px-3">
                     <div id="contact_us">
                         <div class="py-3 px-2">
                             <h5 class="text-uppercase font-os font-size-16 text-muted">location</h5>
@@ -285,17 +303,26 @@
                             </div>
                             <div class="col-sm-6 py-4 px-4">
                                 <h6 class="text-uppercase font-ram font-size-16">get in touch:</h6>
-                                <form action="https://formsubmit.co/natedavehill@gmail.com" method="POST" class="py-3">
+                                <form action="" method="post" enctype="multipart/form-data" class="py-3">
+                                    <div class="col">
+                                        <input type="text" name="subject" style="position: relative;" required class="form-control" placeholder="Subject" value="">
+                                    </div>
                                     <div class="row">
                                         <div class="col">
-                                            <input type="text" name="name" required class="form-control" placeholder="Name">
+                                            <input type="text" name="name" required class="form-control" placeholder="Name" value="">
                                         </div>
                                         <div class="col">
-                                            <input type="email" name="email" required class="form-control" placeholder="E-Mail">
+                                            <input type="email" name="email" required class="form-control" placeholder="E-Mail" value="">
                                         </div>
                                     </div>
                                     <textarea id="" name="message" required cols="30" rows="3" class="form-control my-4" placeholder="Message"></textarea>
                                     <button type="submit" style="position: relative;" class="btn btn-dark">Say Hello!</button>
+
+
+                                    <?php if ($response != '') : ?>
+                                        <div class="alert alert-info mt-3"><?php echo $response; ?></div>
+                                    <?php endif; ?>
+
                                 </form>
                             </div>
                         </div>
@@ -310,36 +337,37 @@
                                 <p class="description font-os font-size-16 text-black-50 text-uppercase">Nathan David Hill</p>
                             </div>
                         </div>
-                         <div class="social-icon col-sm-4 my-5 text-center">
-                                <a class="social-icon text-black-50 m-1" href="https://www.linkedin.com/in/nathandavidhill/" target="_blank">
-                                    <span class="mr-3"><i style="position: relative;" class="fab fa-linkedin"></i></span>
-                                </a>
-                                <a class="social-icon text-black-50 m-1" href="https://www.instagram.com/ndh.jpg/" target="_blank">
-                                    <span class="mr-3"><i style="position: relative;" class="fab fa-instagram"></i></span>
-                                </a>
-                                <a class="social-icon text-black-50 m-1" href="https://github.com/NateDaveHill" target="_blank">
-                                    <span class="mr-3"><i style="position: relative;" class="fab fa-github"></i></span>
-                                </a>
-                            </div>
+                        <div class="social-icon col-sm-4 my-5 text-center">
+                            <a class="social-icon text-black-50 m-1" href="https://www.linkedin.com/in/nathandavidhill/" target="_blank">
+                                <span class="mr-3"><i style="position: relative;" class="fab fa-linkedin"></i></span>
+                            </a>
+                            <a class="social-icon text-black-50 m-1" href="https://www.instagram.com/ndh.jpg/" target="_blank">
+                                <span class="mr-3"><i style="position: relative;" class="fab fa-instagram"></i></span>
+                            </a>
+                            <a class="social-icon text-black-50 m-1" href="https://github.com/NateDaveHill" target="_blank">
+                                <span class="mr-3"><i style="position: relative;" class="fab fa-github"></i></span>
+                            </a>
+                        </div>
                     </div>
-                  </footer>
-                 <!-- #footer -->
+                </footer>
+                <!-- #footer -->
             </div>
         </div>
     </main>
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="./vendor/typed/typed.min.js"></script>
+    <script src="./vendor/typed/typed.min.js"></script>
 
-<script src="./index.js"></script>
+    <script src="./index.js"></script>
 
 </body>
+
 </html>
