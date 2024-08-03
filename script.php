@@ -45,6 +45,6 @@ function sendMail($email, $subject, $message)
     if (!$mail->send()) {
         return "Email not send. Please try again.";
     } else {
-        return "success";
+        return "Email was sent successfully.";
     }
 }
