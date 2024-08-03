@@ -10,7 +10,7 @@ require 'PHPMailer/src/SMTP.php';
 
 require 'config.php';
 
-function sendMail($email, $subject, $message)
+function sendMail($email, $subject, $message, $name)
 {
     $mail = new PHPMailer(true);
 
@@ -28,11 +28,11 @@ function sendMail($email, $subject, $message)
 
     $mail->Port = 587;
 
-    $mail->setFrom(SEND_FROM, SEND_FROM_NAME);
+    $mail->setFrom($email, $name);
 
-    $mail->addAddress($email);
+    $mail->addAddress(USERNAME);
 
-    $mail->addReplyTo(REPLY_TO, REPLY_TO_NAME);
+    $mail->addReplyTo($email, $name);
 
     $mail->isHTML(true);
 

@@ -5,10 +5,10 @@
 $response = '';
 
 if (isset($_POST['submit'])) {
-    if (empty($_POST['email']) || empty($_POST['subject']) || empty($_POST['message'])) {
+    if (empty($_POST['email']) || empty($_POST['subject']) || empty($_POST['message'] || empty($_POST['name']))) {
         $response = "All fields are required.";
     } else {
-        $response = sendMail($_POST['email'], $_POST['subject'], $_POST['message']);
+        $response = sendMail($_POST['email'], $_POST['subject'], $_POST['message'], $_POST['name']);
     }
 }
 
