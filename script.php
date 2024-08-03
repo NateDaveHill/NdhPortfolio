@@ -42,8 +42,6 @@ function sendMail($email, $subject, $message)
 
     $mail->AltBody = $message;
 
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-
     if (!$mail->send()) {
         return "Email not send. Please try again.";
     } else {

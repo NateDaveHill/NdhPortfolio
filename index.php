@@ -316,7 +316,7 @@ if (isset($_POST['submit'])) {
                                         </div>
                                     </div>
                                     <textarea id="" name="message" required cols="30" rows="3" class="form-control my-4" placeholder="Message"></textarea>
-                                    <button type="submit" style="position: relative;" class="btn btn-dark">Say Hello!</button>
+                                    <button type="submit" name="submit" style="position: relative;" class="btn btn-dark">Say Hello!</button>
 
 
                                     <?php if ($response != '') : ?>
