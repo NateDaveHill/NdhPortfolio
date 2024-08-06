@@ -246,7 +246,7 @@ if (isset($_POST['submit'])) {
                                 <a href="https://github.com/NateDaveHill/ToDoApp.Blazor" target="_blank">
                                     <img src="./assets/toDoApp.png" alt="toDoApp" class="img-fluid image__img">
                                     <div class="image__overlay">
-                                        <div class="image__title">ToDoApp</div>
+                                        <div class="image__title">To Do App</div>
                                         <p class="image__description">
                                             C# | Blazor | Sqlite
                                         </p>
@@ -259,7 +259,7 @@ if (isset($_POST['submit'])) {
                                 <a href="https://github.com/NateDaveHill/ReceipePage" target="_blank">
                                     <img src="./assets/receipePage.png" alt="receipePage" class="img-fluid image__img">
                                     <div class="image__overlay">
-                                        <div class="image__title">ReceipePage</div>
+                                        <div class="image__title">Receipe Page</div>
                                         <p class="image__description">
                                             HTML | CSS
                                         </p>
@@ -272,7 +272,7 @@ if (isset($_POST['submit'])) {
                                 <a href="https://github.com/NateDaveHill/LastChance/tree/master/LastChance" target="_blank">
                                     <img src="./assets/newToDo.png" alt="newTodo" class="img-fluid image__img">
                                     <div class="image__overlay">
-                                        <div class="image__title">ToDoApp2.0</div>
+                                        <div class="image__title">To Do App 2.0</div>
                                         <p class="image__description">
                                             C# | Blazor
                                         </p>
@@ -285,7 +285,7 @@ if (isset($_POST['submit'])) {
                                 <a href="https://github.com/NateDaveHill/TheGameOfLife.py" target="_blank">
                                     <img src="./assets/gameOfLife.png" alt="gameOfLife" class="img-fluid image__img">
                                     <div class="image__overlay">
-                                        <div class="image__title">GameOfLife</div>
+                                        <div class="image__title">Game Of Life</div>
                                         <p class="image__description">
                                             Python | ML | Tkinter
                                         </p>
@@ -298,7 +298,7 @@ if (isset($_POST['submit'])) {
                                 <a href="https://github.com/NateDaveHill/SocialLinksProfile" target="_blank">
                                     <img src="./assets/social.png" alt="social" class="img-fluid image__img">
                                     <div class="image__overlay">
-                                        <div class="image__title">SocialLinks</div>
+                                        <div class="image__title">Social Links</div>
                                         <p class="image__description">
                                             HTML | CSS
                                         </p>
@@ -311,7 +311,7 @@ if (isset($_POST['submit'])) {
                                 <a href="https://github.com/NateDaveHill/Tanken" target="_blank">
                                     <img src="./assets/tankenApp.png" alt="tankenApp" class="img-fluid image__img">
                                     <div class="image__overlay">
-                                        <div class="image__title">GasPriceCalc</div>
+                                        <div class="image__title">Gas Price Calc</div>
                                         <p class="image__description">
                                             HTML | CSS | PHP
                                         </p>
@@ -324,7 +324,7 @@ if (isset($_POST['submit'])) {
                                 <a href="https://github.com/NateDaveHill/BlogPreviewCard" target="_blank">
                                     <img src="./assets/blog.png" alt="blog" class="img-fluid image__img">
                                     <div class="image__overlay">
-                                        <div class="image__title">BlogCard</div>
+                                        <div class="image__title">Blog Card</div>
                                         <p class="image__description">
                                             HTML | CSS
                                         </p>
@@ -337,7 +337,7 @@ if (isset($_POST['submit'])) {
                                 <a href="https://github.com/NateDaveHill/QrCodeComponent" target="_blank">
                                     <img src="./assets/qrCode.png" alt="qrCode" class="img-fluid image__img">
                                     <div class="image__overlay">
-                                        <div class="image__title">QrCodeCard</div>
+                                        <div class="image__title">Qr Code Card</div>
                                         <p class="image__description">
                                             HTML | CSS
                                         </p>
