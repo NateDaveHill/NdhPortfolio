@@ -242,47 +242,109 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="row">
                         <div class="col-sm-4 pb-4" style="position: relative;">
-                            <a href="https://github.com/NateDaveHill/ToDoApp.Blazor" target="_blank">
-                                <img src="./assets/toDoApp.png" alt="toDoApp" class="img-fluid">
-                            </a>
+                            <div class="image">
+                                <a href="https://github.com/NateDaveHill/ToDoApp.Blazor" target="_blank">
+                                    <img src="./assets/toDoApp.png" alt="toDoApp" class="img-fluid image__img">
+                                    <div class="image__overlay">
+                                        <div class="image__title">ToDoApp</div>
+                                        <p class="image__description">
+                                            C# | Blazor | Sqlite
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                         <div class="col-sm-4 pb-4" style="position: relative;">
-                            <a href="https://github.com/NateDaveHill/ReceipePage" target="_blank">
-                                <img src="./assets/receipePage.png" alt="receipePage" class="img-fluid">
-                            </a>
+                            <div class="image">
+                                <a href="https://github.com/NateDaveHill/ReceipePage" target="_blank">
+                                    <img src="./assets/receipePage.png" alt="receipePage" class="img-fluid image__img">
+                                    <div class="image__overlay">
+                                        <div class="image__title">ReceipePage</div>
+                                        <p class="image__description">
+                                            HTML | CSS
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                         <div class="col-sm-4 pb-4" style="position: relative;">
-                            <a href="https://github.com/NateDaveHill/LastChance/tree/master/LastChance" target="_blank">
-                                <img src="./assets/newToDo.png" alt="newTodo" class="img-fluid">
-                            </a>
+                            <div class="image">
+                                <a href="https://github.com/NateDaveHill/LastChance/tree/master/LastChance" target="_blank">
+                                    <img src="./assets/newToDo.png" alt="newTodo" class="img-fluid image__img">
+                                    <div class="image__overlay">
+                                        <div class="image__title">ToDoApp2.0</div>
+                                        <p class="image__description">
+                                            C# | Blazor
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                         <div class="col-sm-4 pb-4" style="position: relative;">
-                            <a href="https://github.com/NateDaveHill/TheGameOfLife.py" target="_blank">
-                                <img src="./assets/gameOfLife.png" alt="gameOfLife" class="img-fluid">
-                            </a>
+                            <div class="image">
+                                <a href="https://github.com/NateDaveHill/TheGameOfLife.py" target="_blank">
+                                    <img src="./assets/gameOfLife.png" alt="gameOfLife" class="img-fluid image__img">
+                                    <div class="image__overlay">
+                                        <div class="image__title">GameOfLife</div>
+                                        <p class="image__description">
+                                            Python | ML | Tkinter
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                         <div class="col-sm-4 pb-4" style="position: relative;">
-                            <a href="https://github.com/NateDaveHill/SocialLinksProfile" target="_blank">
-                                <img src="./assets/social.png" alt="social" class="img-fluid">
-                            </a>
+                            <div class="image">
+                                <a href="https://github.com/NateDaveHill/SocialLinksProfile" target="_blank">
+                                    <img src="./assets/social.png" alt="social" class="img-fluid image__img">
+                                    <div class="image__overlay">
+                                        <div class="image__title">SocialLinks</div>
+                                        <p class="image__description">
+                                            HTML | CSS
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                         <div class="col-sm-4 pb-4" style="position: relative;">
-                            <a href="https://github.com/NateDaveHill/Tanken" target="_blank">
-                                <img src="./assets/tankenApp.png" alt="tankenApp" class="img-fluid">
-                            </a>
+                            <div class="image">
+                                <a href="https://github.com/NateDaveHill/Tanken" target="_blank">
+                                    <img src="./assets/tankenApp.png" alt="tankenApp" class="img-fluid image__img">
+                                    <div class="image__overlay">
+                                        <div class="image__title">GasPriceCalc</div>
+                                        <p class="image__description">
+                                            HTML | CSS | PHP
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-
                         <div class="col-sm-4 pb-4" style="position: relative;">
-                            <a href="https://github.com/NateDaveHill/BlogPreviewCard" target="_blank">
-                                <img src="./assets/blog.png" alt="blog" class="img-fluid">
-                            </a>
+                            <div class="image">
+                                <a href="https://github.com/NateDaveHill/BlogPreviewCard" target="_blank">
+                                    <img src="./assets/blog.png" alt="blog" class="img-fluid image__img">
+                                    <div class="image__overlay">
+                                        <div class="image__title">BlogCard</div>
+                                        <p class="image__description">
+                                            HTML | CSS
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                         <div class="col-sm-4 pb-4" style="position: relative;">
-                            <a href="https://github.com/NateDaveHill/QrCodeComponent" target="_blank">
-                                <img src="./assets/qrCode.png" alt="qrCode" class="img-fluid">
-                            </a>
+                            <div class="image">
+                                <a href="https://github.com/NateDaveHill/QrCodeComponent" target="_blank">
+                                    <img src="./assets/qrCode.png" alt="qrCode" class="img-fluid image__img">
+                                    <div class="image__overlay">
+                                        <div class="image__title">QrCodeCard</div>
+                                        <p class="image__description">
+                                            HTML | CSS
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-
                     </div>
                 </section>
                 <!-- #work -->
