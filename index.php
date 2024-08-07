@@ -215,20 +215,20 @@ if (isset($_POST['submit'])) {
                 <!-- #service -->
 
                 <!-- reference -->
-                <section class="reference bg-light py-5 px-4">
+                <section class="bg-light py-5 px-4">
                     <div class="refer py-3">
                         <h5 class="text-uppercase font-os font-size-16 text-muted">companies i worked at</h5>
                         <h1 class="text-uppercase font-staat font-size-34">references</h1>
                     </div>
-                    <div class="row mb-5 d-flex align-items-center">
+                    <div class="row mb-5 d-flex align-items-center" id="references">
                         <div class="col-sm-4 my-3">
-                            <img src="./assets/shopify.png" alt="refer1" class="img-fluid">
+                            <img src="./assets/shopify.png" alt="refer1" class="logo img-fluid" draggable="true">
                         </div>
                         <div class="col-sm-4 my-3">
-                            <img src="./assets/giessweinsws.png" alt="refer2" class="img-fluid">
+                            <img src="./assets/giessweinsws.png" alt="refer2" class="logo img-fluid" draggable="true">
                         </div>
                         <div class="col-sm-4 my-3">
-                            <img src="./assets/relay.png" alt="refer3" class="img-fluid">
+                            <img src="./assets/relay.png" alt="refer3" class="logo img-fluid" draggable="true">
                         </div>
                     </div>
                 </section>

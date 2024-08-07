@@ -200,6 +200,9 @@ body{
     margin-top: 0.25em;
 }
 
+.logo {
+    position: relative;
+}
 
 
 /* #site-main */
