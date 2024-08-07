@@ -188,8 +188,6 @@ body{
     transform: translate(0);
 }
 
-
-
 .image__title{
     font-size: 1.5em;
     font-weight: bold;
@@ -203,7 +201,6 @@ body{
 .logo {
     position: relative;
 }
-
 
 /* #site-main */
 

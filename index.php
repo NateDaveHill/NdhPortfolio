@@ -220,7 +220,7 @@ if (isset($_POST['submit'])) {
                         <h5 class="text-uppercase font-os font-size-16 text-muted">companies i worked at</h5>
                         <h1 class="text-uppercase font-staat font-size-34">references</h1>
                     </div>
-                    <div class="row mb-5 d-flex align-items-center" id="references">
+                    <div class="row mb-5 d-flex align-items-center" id="references" style="position: relative;">
                         <div class="col-sm-4 my-3">
                             <img src="./assets/shopify.png" alt="refer1" class="logo img-fluid" draggable="true">
                         </div>
