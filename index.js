@@ -16,7 +16,7 @@ $(document).ready(function(e){
 
 var typed = new Typed('#typed', {
     strings: [
-        "Software Developer.", 
+        "Software Developer.",
         "Photographer."],
     typeSpeed: 50,
     backSpeed: 50,
@@ -27,7 +27,7 @@ var typed_2 = new Typed('#typed_2', {
         strings: [
             "Humilty.",
             "Honesty.",
-            "Integrity.", 
+            "Integrity.",
             "Transparency.",
             "Proactivity.",
             "Discipline.",
@@ -35,8 +35,7 @@ var typed_2 = new Typed('#typed_2', {
         typeSpeed: 50,
         backSpeed: 50,
         loop: true
-    });            
-});
+    });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -94,3 +93,4 @@ document.addEventListener('mouseup', (event) => {
     logo.dom = null;
 });
 
+});

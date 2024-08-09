@@ -22,6 +22,8 @@ if (isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NDH</title>
 
+    <link rel="icon" type="image/x-icon" href="NDH.logo.png" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./style.css">
@@ -35,8 +37,7 @@ if (isset($_POST['submit'])) {
             <div class="col-3 bgcolor-black">
                 <nav class="primary-nav navbar-expand-md">
                     <div class="site-title text-center text-light py-5">
-                        <a href="#" class="navbar-brand font-staat font-size-40">NDH</a>
-                        <p class="description text-uppercase font-os">nathan david hill</p>
+                        <a href="#home" class="navbar-brand font-staat font-size-40"><img class="ndhLogo" src="./NDH.logo.png" alt="NDH logo"></a>
                     </div>
                     <div class="d-flex flex-column">
                         <a href="#home" class="nav-item nav-link text-white-50 font-os font-size-16 active">Home</a>
@@ -138,19 +139,19 @@ if (isset($_POST['submit'])) {
                             <div class="bar-1 m-3">
                                 <div class="d-flex d-flex-row justify-content-between">
                                     <p class="font-ram font-size-16">Developer</p>
-                                    <span class="font-ram font-size-16">75%</span>
+                                    <span class="font-ram font-size-16">89%</span>
                                 </div>
                                 <div class="progress" style="height: 3px;">
-                                    <div class="progress-bar bgcolor-black" role="progressbar" style="width: 75%;"></div>
+                                    <div class="progress-bar bgcolor-black" role="progressbar" style="width: 89%;"></div>
                                 </div>
                             </div>
                             <div class="bar-1 m-3">
                                 <div class="d-flex d-flex-row justify-content-between">
                                     <p class="font-ram font-size-16">Photography</p>
-                                    <span class="font-ram font-size-16">95%</span>
+                                    <span class="font-ram font-size-16">85%</span>
                                 </div>
                                 <div class="progress" style="height: 3px;">
-                                    <div class="progress-bar bgcolor-black" role="progressbar" style="width: 95%;"></div>
+                                    <div class="progress-bar bgcolor-black" role="progressbar" style="width: 85%;"></div>
                                 </div>
                             </div>
                             <div class="bar-1 m-3">
@@ -165,10 +166,10 @@ if (isset($_POST['submit'])) {
                             <div class="bar-1 m-3">
                                 <div class="d-flex d-flex-row justify-content-between">
                                     <p class="font-ram font-size-16">Problem Solving</p>
-                                    <span class="font-ram font-size-16">70%</span>
+                                    <span class="font-ram font-size-16">88%</span>
                                 </div>
                                 <div class="progress" style="height: 3px;">
-                                    <div class="progress-bar bgcolor-black" role="progressbar" style="width: 70%;"></div>
+                                    <div class="progress-bar bgcolor-black" role="progressbar" style="width: 88%;"></div>
                                 </div>
                             </div>
                         </div>
