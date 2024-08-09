@@ -61,55 +61,6 @@ function toggle_onclick($win, $navbar, width){
     }
 }
 
-
-let cursor = {
-    x: null,
-    y: null
-}
-let logo = {
-    dom: null,
-    x: null,
-    y: null
-}
-
-// document.addEventListener('mousedown', (event) =>{
-//     if(event.target.classList.contains('logo')){
-//         cursor = {
-//             x: event.clientX,
-//             y: event.clientY
-//         }
-//         logo = {
-//             dom: event.target,
-//             x: event.target.getBoundingClientRect().left,
-//             y: event.target.getBoundingClientRect().top
-
-//         }
-//         console.log(logo);
-//     }
-// });
-
-// document.addEventListener('mousemove', (event) => {
-//     if (logo.dom == null) return;
-
-//     let currentCursor = {
-//         x: event.clientX,
-//         y: event.clientY
-//     };
-
-//     let distance = {
-//         x: currentCursor.x - cursor.x,
-//         y: currentCursor.y - cursor.y
-//     };
-
-//     logo.dom.style.left = (logo.x + distance.x) + 'px';
-//     logo.dom.style.top = (logo.y + distance.y) + 'px';
-// });
-
-// document.addEventListener('mouseup', (event) =>{
-//     logo.dom = null;
-// });
-
-
 document.addEventListener('mousedown', (event) => {
     if(event.target.classList.contains('logo')){
         cursor = {
