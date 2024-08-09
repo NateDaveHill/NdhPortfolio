@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NDH</title>
 
-    <link rel="icon" type="image/x-icon" href="NDH.logo.png" />
+    <link rel="icon" type="image/x-icon" href="NdhLogo.png" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
             <div class="col-3 bgcolor-black">
                 <nav class="primary-nav navbar-expand-md">
                     <div class="site-title text-center text-light py-5">
-                        <a href="#home" class="navbar-brand font-staat font-size-40"><img class="ndhLogo" src="./NDH.logo.png" alt="NDH logo"></a>
+                        <a href="#home" class="navbar-brand font-staat font-size-40"><img class="ndhLogo" src="./NdhLogo.png" alt="NDH logo"></a>
                     </div>
                     <div class="d-flex flex-column">
                         <a href="#home" class="nav-item nav-link text-white-50 font-os font-size-16 active">Home</a>
