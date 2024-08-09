@@ -72,19 +72,55 @@ let logo = {
     y: null
 }
 
-document.addEventListener('mousedown', (event) =>{
+// document.addEventListener('mousedown', (event) =>{
+//     if(event.target.classList.contains('logo')){
+//         cursor = {
+//             x: event.clientX,
+//             y: event.clientY
+//         }
+//         logo = {
+//             dom: event.target,
+//             x: event.target.getBoundingClientRect().left,
+//             y: event.target.getBoundingClientRect().top
+
+//         }
+//         console.log(logo);
+//     }
+// });
+
+// document.addEventListener('mousemove', (event) => {
+//     if (logo.dom == null) return;
+
+//     let currentCursor = {
+//         x: event.clientX,
+//         y: event.clientY
+//     };
+
+//     let distance = {
+//         x: currentCursor.x - cursor.x,
+//         y: currentCursor.y - cursor.y
+//     };
+
+//     logo.dom.style.left = (logo.x + distance.x) + 'px';
+//     logo.dom.style.top = (logo.y + distance.y) + 'px';
+// });
+
+// document.addEventListener('mouseup', (event) =>{
+//     logo.dom = null;
+// });
+
+
+document.addEventListener('mousedown', (event) => {
     if(event.target.classList.contains('logo')){
         cursor = {
             x: event.clientX,
             y: event.clientY
-        }
+        };
         logo = {
             dom: event.target,
             x: event.target.getBoundingClientRect().left,
             y: event.target.getBoundingClientRect().top
-
-        }
-        console.log(logo);
+        };
     }
 });
 
@@ -96,15 +132,14 @@ document.addEventListener('mousemove', (event) => {
         y: event.clientY
     };
 
-    let distance = {
-        x: currentCursor.x - cursor.x,
-        y: currentCursor.y - cursor.y
-    };
+    let newLeft = currentCursor.x - cursor.x;
+    let newTop = currentCursor.y - cursor.y;
 
-    logo.dom.style.left = (logo.x + distance.x) + 'px';
-    logo.dom.style.top = (logo.y + distance.y) + 'px';
+    logo.dom.style.left = newLeft + 'px';
+    logo.dom.style.top = newTop + 'px';
 });
 
-document.addEventListener('mouseup', (event) =>{
+document.addEventListener('mouseup', (event) => {
     logo.dom = null;
 });
+
