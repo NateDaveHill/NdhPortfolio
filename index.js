@@ -60,6 +60,17 @@ function toggle_onclick($win, $navbar, width){
     }
 }
 
+
+let cursor = {
+    x: null,
+    y: null
+}
+let logo = {
+    dom: null,
+    x: null,
+    y: null
+}
+
 document.addEventListener('mousedown', (event) => {
     if(event.target.classList.contains('logo')){
         cursor = {
@@ -71,8 +82,10 @@ document.addEventListener('mousedown', (event) => {
             x: event.target.getBoundingClientRect().left,
             y: event.target.getBoundingClientRect().top
         };
+        console.table(logo);
     }
 });
+
 
 document.addEventListener('mousemove', (event) => {
     if (logo.dom == null) return;
