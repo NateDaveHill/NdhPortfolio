@@ -154,9 +154,7 @@ body{
             }
         }
     }
-    
-
-} 
+}
 
 #footer form .row .col input[type="text"],
 #footer form input[type="text"],
@@ -169,11 +167,14 @@ body{
     position: relative;
 }
 
-#footer .social-icon{
-    text-decoration: none;
-}
-#footer .social-icon:hover{
-    color: var(--color-black) !important;
+#footer{
+    .social-icon{
+        text-decoration: none;
+    }
+
+    .social-icon:hover{
+        color: var(--color-black) !important;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -209,19 +210,19 @@ body{
     justify-content: center;
     opacity: 0;
     transition: opacity 0.25s;
-}
 
-.image__overlay > * {
-    transform: translate(20px);
-    transition: transform 0.25s;
-}
+    .image__overlay > * {
+        transform: translate(20px);
+        transition: transform 0.25s;
 
-.image__overlay:hover{
-    opacity: 1;
-}
+        &:hover{
+            opacity: 1;
+        }
 
-.image__overlay:hover > * {
-    transform: translate(0);
+        &:hover > * {
+            transform: translate(0);
+        }
+    }
 }
 
 .image__title{
