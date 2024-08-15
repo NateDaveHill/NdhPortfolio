@@ -211,19 +211,18 @@ body{
     opacity: 0;
     transition: opacity 0.25s;
 
-    .image__overlay > * {
-        transform: translate(20px);
-        transition: transform 0.25s;
-
-        &:hover{
+    &:hover{
             opacity: 1;
         }
-
-        &:hover > * {
+    &:hover > * {
             transform: translate(0);
         }
-    }
 }
+
+.image__overlay > * {
+        transform: translate(20px);
+        transition: transform 0.25s;
+    }
 
 .image__title{
     font-size: 1.5em;
@@ -238,6 +237,9 @@ body{
 .logo {
     position: relative;
     cursor: pointer;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
 }
 
 /* #site-main */

@@ -222,16 +222,26 @@ if (isset($_POST['submit'])) {
                         <h1 class="text-uppercase font-staat font-size-34">references</h1>
                         <h6 class="text-uppercase font-os font-size-16 text-muted">why don't you try the drag and drop feature here?</h6>
                     </div>
-                    <div class="row mb-5 d-flex align-items-center" id="references" style="position: relative;">
+                    <div class="row mb-5 d-flex justify-content-center text-center align-items-center" id="references" style="position: relative;">
                         <div class="col-sm-4 my-3">
-                            <img src="./assets/shopify.png" alt="refer1" class="logo img-fluid" draggable="true">
+                            <img src="./assets/shopify.png" alt="refer0" class="logo img-fluid" draggable="true">
                         </div>
                         <div class="col-sm-4 my-3">
-                            <img src="./assets/giessweinsws.png" alt="refer2" class="logo img-fluid" draggable="true">
+                            <img src="./assets/medienfabrik.png" alt="refer1" class="logo img-fluid" draggable="true">
                         </div>
                         <div class="col-sm-4 my-3">
-                            <img src="./assets/relay.png" alt="refer3" class="logo img-fluid" draggable="true">
+                            <img src="./assets/relay.png" alt="refer2" class="logo img-fluid" draggable="true">
                         </div>
+                        <div class="col-sm-4 my-3">
+                            <img src="./assets/giessweinsws.png" alt="refer3" class="logo img-fluid" draggable="true">
+                        </div>
+                        <div class="col-sm-4 my-3">
+                            <img src="./assets/pixelproject.png" alt="refer4" class="logo img-fluid" draggable="true">
+                        </div>
+                        <div class="col-sm-4 my-3">
+                            <img src="./assets/alpdest.png" alt="refer5" class="logo img-fluid" draggable="true">
+                        </div>
+
                     </div>
                 </section>
                 <!-- #reference -->
